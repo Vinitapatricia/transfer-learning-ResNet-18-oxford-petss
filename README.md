@@ -1,6 +1,6 @@
 # Transfer Learning ResNet-18 pada Oxford-IIIT Pet (10 Kelas)
 
-Tugas GSLC Deep Learning – [Nama], [NIM], [Kelas], Binus University.
+Tugas GSLC Deep Learning – Vinita Patrici - 2802417951
 
 ## Deskripsi
 Perbandingan empat kondisi pelatihan ResNet-18 pada subset 10 kelas Oxford-IIIT Pet:
@@ -16,7 +16,7 @@ Total 1981 gambar, split stratified 70/15/15 (1386 / 297 / 298) dengan seed 42.
 Dataset diunduh otomatis oleh torchvision.
 
 ## Hasil Ringkas
-| |Strategi| Trainable Params	| Learning Rate |	Epoch Konvergen	| Durasi (s) | Val Acc | Gap Test | Macro F1|
+|nama|Strategi| Trainable Params	| Learning Rate |	Epoch Konvergen	| Durasi (s) | Val Acc | Gap Test | Macro F1|
 |B1|Semua layer dilatih dan model diberi boobt acak |	11181642 | [0.001]| 6|	3818.084|	0.4916|	0.0394|	0.4876|
 |B2|	Seluruh layer backbone dibekukan dan layer fc dilatih|	5130|	[0.001]|	24|	4999.999|	0.9798|	0.0166|	0.9634|
 |B3|	layer 4 dan fc dilatih dengan differential learning rate	|8398858|	[0.0001, 0.001]|	4	|1663.058|	0.9798	|0.0202	|0.9800|
@@ -36,7 +36,7 @@ seed 42. B3: LR 1e-4 (layer4) dan 1e-3 (fc).
 4. Log tersimpan otomatis ke `log_per_epoch.csv`, `log_ringkasan.csv`, `log_hasil.json`
 
 ## Isi Repo
-- `GSLC_DeepLearning.ipynb` – seluruh eksperimen
+- `GSLCDeepLearning.ipynb` – seluruh eksperimen
 - `laporan.pdf` – laporan analisis
 - `Bagian A.pdf` - jawaban untuk bagian A
 - `log_per_epoch.csv` - log mentah per epoch
