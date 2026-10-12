@@ -43,7 +43,3 @@ seed 42. B3: LR 1e-4 (layer4) dan 1e-3 (fc).
 - `log_ringkasan.csv` - log ringkasan
 - `log_hasil.json` - log hasil
 
-
-
-## Pernyataan Penggunaan AI
-Lihat lampiran di `laporan.pdf`.
